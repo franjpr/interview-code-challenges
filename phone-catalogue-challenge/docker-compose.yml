@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  client:
+    build: ./client
+    ports:
+      - "3001:3000"
+    container_name: service_client
+  server:
+    build: ./server
+    ports:
+      - "4001:4000"
+    container_name: service_server
